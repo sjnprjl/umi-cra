@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Manrope", sans-serif !important;
+  font-weight: 600;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-gradient {
+  background: linear-gradient(
+    195.84deg,
+    #d4e4fc 8.79%,
+    #f0f8fd 57.09%,
+    #5dadec 190.96%
+  );
+}
+
+.btn {
+  background: linear-gradient(
+    90deg,
+    #38add7 0%,
+    rgba(56, 173, 215, 0.6) 104.67%
+  );
+  color: #fff;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:hover {
+  background: #3b82f6;
+}
+
+.btn:active {
+  background: #2563eb;
 }
